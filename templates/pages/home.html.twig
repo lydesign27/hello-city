@@ -1,15 +1,21 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <img  class="rounded" src="{{ asset('/images/iphone.png') }}">
     <h1>Hello Lady ! <h1>
 
     <p>It's currently {{ 'now'|date('H:i A')}}.  </p>
-
-<footer>
 <p>
-&copy; Copyright {{ 'now'|date('Y') }} 
-&middot; <a href="#">About Us</a>
+<a href="{{ path('app_portfolio') }}">Porfolio</a>
 </p>
-</footer>
+        
+        </div>
+    </div>
+</div>
+  
+
 
 {% endblock %}

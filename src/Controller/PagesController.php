@@ -16,4 +16,12 @@ class PagesController extends AbstractController
     {
         return $this->render('pages/home.html.twig');
     }
+     /**
+     * @Route("/portfolio", name="app_portfolio")
+     */
+    public function portfolio(): Response
+    {
+        return $this->render('pages/portfolio.html.twig');
+    }
+
 }
